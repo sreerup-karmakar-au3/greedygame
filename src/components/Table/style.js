@@ -6,10 +6,15 @@ export const TableWrapper = styled.table`
     tr {
         width: 11.11%;
 
+        th {
+            background-color: #BDBDBD;
+            border-radius: 8px;
+        }
+
         th, td {
             white-space: nowrap;
             text-align: center;
-            border-bottom: 1px solid black;
+            padding: 5px 0;
         }
     }
 `;

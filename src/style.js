@@ -56,8 +56,13 @@ export const SettingsWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    overflow-x: auto;
 `;
 
 export const ContentWrapper = styled.div`
+    margin-top: 1rem;
     overflow: auto;
 `;

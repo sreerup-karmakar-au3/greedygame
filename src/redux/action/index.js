@@ -1,11 +1,11 @@
 export const selectContent = (param) => {
-    if (param === null) {
+    if (param === "Date" || param === "App Name") {
         return;
     }
     return (dispatch) => {
         dispatch({
             type: "UPDATE",
-            payload: param
+            payload: param,
         });
     };
 };

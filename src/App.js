@@ -59,9 +59,7 @@ export default function App() {
                     Impression: ele.impressions,
                     Clicks: ele.clicks,
                     Revenue: ele.revenue.toFixed(2),
-                    "Fill Rate": ((ele.requests / ele.responses) * 100).toFixed(
-                        2
-                    ),
+                    "Fill Rate": ((ele.requests / ele.responses) * 100).toFixed(2),
                     CTR: ((ele.clicks / ele.impressions) * 100).toFixed(2),
                 },
             ];
@@ -110,6 +108,8 @@ export default function App() {
             </S.SelectionWrapper>
 
             {showSettings ? <Settings /> : ""}
+
+            <hr />
 
             {date !== null ? (
                 <S.ContentWrapper>
